@@ -9,7 +9,10 @@
   "author": "zangmenhsu",
   "license": "ISC",
   "dependencies": {
+    "ejs": "^3.1.6",
+    "ejs-locals": "^1.0.2",
     "express": "^4.17.2",
+    "nodemon": "^2.0.15",
     "serialport": "^9.2.8"
   }
 }

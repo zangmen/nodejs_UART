@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+    <head>
+        <title>UART Control</title>
+    </head>
+    <body>
+        <h1>控制台</h1>
+        <fieldset>
+            <legend>LED</legend>
+            <head>各別LED開関</head>
+            <div id="1">
+                <from action="/LED1" method="get">
+                    LED1: <input type='button' value="開" onclick="location.href=`/LED1/ON`" >
+                    <input type='button' value="関" onclick="location.href=`/LED1/OFF`" >
+                </from><br>
+                <from action="/LED2" method="get">
+                    LED2: <input type='button' value="開" onclick="location.href=`/LED2/ON`" >
+                    <input type='button' value="関" onclick="location.href=`/LED2/OFF`" >
+                </from><br>
+                <from action="/LED3" method="get">
+                    LED3: <input type='button' value="開" onclick="location.href=`/LED3/ON`" >
+                    <input type='button' value="関" onclick="location.href=`/LED3/OFF`" >
+                </from><br>
+                <from action="/LED4" method="get">
+                    LED4: <input type='button' value="開" onclick="location.href=`/LED4/ON`" >
+                    <input type='button' value="関" onclick="location.href=`/LED4/OFF`" >
+                </from>
+            </div>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>LED亮法</legend>
+            <div id='2'>
+                <from action="/LED" method="get">
+                    pilix: <input type='button' value="開始 " onclick="location.href=`/LED/pilix`" >
+                </from>
+            </div>
+        </fieldset>
+    </body>
+</html>

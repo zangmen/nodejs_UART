@@ -20,10 +20,6 @@
                 <from action="/LED3" method="get">
                     LED3: <input type='button' value="開" onclick="location.href=`/LED3/ON`" >
                     <input type='button' value="関" onclick="location.href=`/LED3/OFF`" >
-                </from><br>
-                <from action="/LED4" method="get">
-                    LED4: <input type='button' value="開" onclick="location.href=`/LED4/ON`" >
-                    <input type='button' value="関" onclick="location.href=`/LED4/OFF`" >
                 </from>
             </div>
         </fieldset>
@@ -33,6 +29,17 @@
             <div id='2'>
                 <from action="/LED" method="get">
                     pilix: <input type='button' value="開始 " onclick="location.href=`/LED/pilix`" >
+                    pwm(0~255): <input type='button' value="開始 " onclick="location.href=`/LED/pwm`" >
+                    全亮: <input type='button' value="開始 " onclick="location.href=`/LED_ALL/ON`" >
+                    全関: <input type='button' value="開始 " onclick="location.href=`/LED_ALL/OFF`" >
+                </from>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>序列埠</legend>
+            <div id='3'>
+                <from action='/spStatus' method='get'>
+                    <textarea name="textarea" rows='30' cols="50"> </textarea>
                 </from>
             </div>
         </fieldset>

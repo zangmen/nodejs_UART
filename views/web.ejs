@@ -1,10 +1,42 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
+    <link rel="stylesheet" href="/table.css">
     <head>
         <title>UART Control</title>
     </head>
     <body>
         <h1>控制台</h1>
+        <fieldset>
+           <legend>連線狀態</legend>
+            序列埠位置: <%= port %><br>
+            <div id=led_status>
+                LED:<br>
+                <table>
+                    <tr>
+                        <th>LED</th>
+                        <th>Status</th>
+                    </tr>
+                    <tr>
+                        <td>LED1</td>
+                        <td><%= items[0] %></td>
+                    </tr>
+                    <tr>
+                        <td>LED2</td>
+                        <td><%= items[3] %></td>
+                    </tr>
+                    <tr>
+                        <td>LED3</td>
+                        <td><%= items[4] %></td>
+                    </tr>
+                    <tr>
+                        <td>LED4</td>
+                        <td><%= items[5] %></td>
+                    </tr>
+                </table>
+            </div>
+
+        </fieldset>
+        <br>
         <fieldset>
             <legend>LED</legend>
             <head>各別LED開関</head>
@@ -39,7 +71,7 @@
             <legend>序列埠</legend>
             <div id='3'>
                 <from action='/spStatus' method='get'>
-                    <textarea name="textarea" rows='30' cols="50"> </textarea>
+                   
                 </from>
             </div>
         </fieldset>
